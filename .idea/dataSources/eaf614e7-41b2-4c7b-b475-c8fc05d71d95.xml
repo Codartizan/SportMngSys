@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="@sportmngsys">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="sportmngsys">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="giit"/>
+    <schema id="4" parent="1" name="information_schema"/>
+    <schema id="5" parent="1" name="mysql"/>
+    <schema id="6" parent="1" name="performance_schema"/>
+    <schema id="7" parent="1" name="pfcase"/>
+    <schema id="8" parent="1" name="qapage"/>
+    <schema id="9" parent="1" name="qaplatform"/>
+    <schema id="10" parent="1" name="sakila"/>
+    <schema id="11" parent="1" name="sys"/>
+    <schema id="12" parent="1" name="world"/>
+    <table id="13" parent="2" name="team"/>
+    <column id="14" parent="13" name="TEAM_ID">
+      <Position>1</Position>
+      <DataType>int(10) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="15" parent="13" name="TEAM_NAME">
+      <Position>2</Position>
+      <DataType>varchar(225)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="16" parent="13" name="PLAYER">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="17" parent="13" name="GENDER">
+      <Position>4</Position>
+      <DataType>varchar(1)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="18" parent="13" name="CREATE_DATE">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="19" parent="13" name="STATUS">
+      <Position>6</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="20" parent="13" name="PROJECT">
+      <Position>7</Position>
+      <DataType>varchar(225)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="21" parent="13" name="H_UNIFORM">
+      <Position>8</Position>
+      <DataType>varchar(3)|0</DataType>
+    </column>
+    <column id="22" parent="13" name="A_UNIFORM">
+      <Position>9</Position>
+      <DataType>varchar(3)|0</DataType>
+    </column>
+    <key id="23" parent="13" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>TEAM_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
